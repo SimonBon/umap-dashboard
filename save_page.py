@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 
 # URL of the local Dash app
-app_url = "http://localhost:8050"
+app_url = "http://localhost:8053"
 
 # Start a browser session
 browser = webdriver.Chrome()
