@@ -4,7 +4,7 @@ from src.dataloader import load_data
 from src.variables import DATA_FOLDER
 from dash_bootstrap_components.themes import BOOTSTRAP
 
-app = app = Dash(__name__, external_stylesheets=[BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[BOOTSTRAP])
 server = app.server
 
 umap_data = load_data("umap_data.feather")
