@@ -6,7 +6,7 @@
     width: 90%;
     height: 60vh;
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     vertical-align: middle;
     /* width: 50%;
     height: 60vh;
@@ -16,7 +16,7 @@
 }
 
 .main-block {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     margin: 5em;
 }
@@ -24,13 +24,13 @@
 .dropdown-button {
     width: 90%;
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     vertical-align: middle;
 }
 
 .dropdown-container {
     width: 90%;
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     vertical-align: middle;
 }
