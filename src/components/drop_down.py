@@ -14,7 +14,7 @@ def render(app: Dash, df: pd.DataFrame) -> dcc.Dropdown:
     def reset_dropdown(_: int):
         return [None, 'Select Marker']
      
-    print({col: col for col in df.columns})
+    # print({col: col for col in df.columns})
      
     return dcc.Dropdown(
                 id = ids.ID_DROPDOWN,
