@@ -5,8 +5,7 @@ from .. import ids
 
 def create_plot(umap_df, expr_df, color=None):
     
-    return dcc.Graph(className="umap-object",
-                     figure=go.Figure(go.Scatter(
+    fig = go.Figure(go.Scatter(
             x=umap_df["V1"], 
             y=umap_df["V2"], 
             mode="markers",
@@ -17,7 +16,20 @@ def create_plot(umap_df, expr_df, color=None):
             ),
             # customdata=pd.DataFrame({"idx": filtered_df.index, "celltype": filtered_df["celltype"]}),  # Adding the index of the DataFrame as custom data
             # hovertemplate='Celltype: %{customdata[1]}' # This will show the 'celltype' when you hover over a marker
-        )),
+        ))
+    
+    fig.update_layout(
+        margin=dict(
+            l=20,
+            r=20,
+            b=20,
+            t=20,
+            pad=0
+        )
+    )
+    
+    return dcc.Graph(className="umap-object",
+                     figure=fig,
         style=dict(height="100%", width="100%")
     )
 
