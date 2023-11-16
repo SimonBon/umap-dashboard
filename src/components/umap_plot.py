@@ -23,7 +23,7 @@ def create_plot(umap_df, expr_df, color=None):
             l=20,
             r=20,
             b=20,
-            t=20,
+            t=100,
             pad=0
         )
     )
