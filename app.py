@@ -1,7 +1,7 @@
 from dash import Dash, html, dcc
-from src.components.layout import create_layout
-from src.dataloader import load_data
-from src.variables import DATA_FOLDER
+from app.src.components.layout import create_layout
+from app.src.dataloader import load_data
+from app.src.variables import DATA_FOLDER
 from dash_bootstrap_components.themes import BOOTSTRAP
 import pandas as pd
 import os

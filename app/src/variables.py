@@ -1,1 +1,1 @@
-DATA_FOLDER = "./data"
+DATA_FOLDER = "./app/data"
