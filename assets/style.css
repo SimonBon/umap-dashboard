@@ -3,8 +3,10 @@
 }
 
 .umap-container {
-    width: 60vh;
-    height: 60vh;
+    width: 80%;
+    height: 80%;
+    max-width: 60vh;
+    max-height: 60vh;
     display: inline-block;
     vertical-align: middle;
 }
