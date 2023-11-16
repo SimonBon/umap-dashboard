@@ -3,32 +3,32 @@
 }
 
 .umap-container {
+    height: 60vh;
     width: 90%;
-    height: 90%;
     max-width: 60vh;
-    max-height: 60vh;
-    /* display: inline-block; */
-    vertical-align: middle;
+    border: 1px solid rgb(0, 8, 255);
 }
 
 .main-block {
-    /* border: 1px solid black; */
-    text-align: center;
-    margin: 1em;
+    border: 1px solid rgb(0, 8, 255);
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center-align children horizontally */
+    justify-content: center;
+    /* Center-align children vertically */
 }
 
 .dropdown-button {
     width: 90%;
     max-width: 60vh;
-    /* display: inline-block; */
-    /* border: 1px solid red; */
-    vertical-align: middle;
+    border: 1px solid rgb(0, 8, 255);
 }
 
 .dropdown-container {
+    text-align: center;
     width: 90%;
     max-width: 60vh;
-    /* display: inline-block; */
-    /* border: 1px solid red; */
-    vertical-align: middle;
+    border: 1px solid rgb(0, 8, 255);
 }
