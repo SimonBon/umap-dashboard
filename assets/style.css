@@ -3,8 +3,8 @@
 }
 
 .umap-container {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     max-width: 60vh;
     max-height: 60vh;
     display: inline-block;
@@ -14,7 +14,7 @@
 .main-block {
     /* border: 1px solid black; */
     text-align: center;
-    margin: 5em;
+    margin: 1em;
 }
 
 .dropdown-button {
