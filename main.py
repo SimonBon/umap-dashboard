@@ -13,9 +13,6 @@ print(umap_data.shape, expr_data.shape)
 
 app.title = "Interactive UMAP"
 app.layout = create_layout(app, umap_data, expr_data)
-app.run()
-
 
 if __name__ == '__main__':
-    
-    pass
+    app.run_server(debug=True, port=8050)
