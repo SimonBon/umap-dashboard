@@ -1,0 +1,36 @@
+.title {
+    margin: 20px;
+}
+
+.umap-container {
+    width: 90%;
+    height: 60vh;
+    display: inline-block;
+    border: 1px solid red;
+    vertical-align: middle;
+    /* width: 50%;
+    height: 60vh;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: inline-block; */
+}
+
+.main-block {
+    border: 1px solid black;
+    text-align: center;
+    margin: 5em;
+}
+
+.dropdown-button {
+    width: 90%;
+    display: inline-block;
+    border: 1px solid red;
+    vertical-align: middle;
+}
+
+.dropdown-container {
+    width: 90%;
+    display: inline-block;
+    border: 1px solid red;
+    vertical-align: middle;
+}
