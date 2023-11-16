@@ -7,7 +7,7 @@
     height: 90%;
     max-width: 60vh;
     max-height: 60vh;
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: middle;
 }
 
@@ -20,7 +20,7 @@
 .dropdown-button {
     width: 90%;
     max-width: 60vh;
-    display: inline-block;
+    /* display: inline-block; */
     /* border: 1px solid red; */
     vertical-align: middle;
 }
@@ -28,7 +28,7 @@
 .dropdown-container {
     width: 90%;
     max-width: 60vh;
-    display: inline-block;
+    /* display: inline-block; */
     /* border: 1px solid red; */
     vertical-align: middle;
 }
