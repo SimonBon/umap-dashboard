@@ -1,12 +1,12 @@
-from dash import Dash, html
-from . import umap_plot, drop_down
+from dash import Dash, html, dcc
+from . import umap_plot, drop_down, upload, example_button
 from .. import ids
 import pandas as pd
 
-
-def create_layout(app: Dash, umap_df: pd.DataFrame, expr_df: pd.DataFrame) -> html.Div:
+def create_layout(app: Dash, data=None) -> html.Div:
     return html.Div(
     children=[
+        dcc.Store(id=ids.ID_UMAP_DATA, data=data),
         html.H1("Interactive UMAP", className="title"),
         html.Hr(),
         html.Div(
@@ -16,20 +16,38 @@ def create_layout(app: Dash, umap_df: pd.DataFrame, expr_df: pd.DataFrame) -> ht
                     className="umap-container",
                     id = ids.ID_UMAP,
                     children=[
-                        umap_plot.render(app, umap_df, expr_df)
+                        umap_plot.render(app)
                         ]
                 ),
                 html.Div(
                     className="dropdown-container",
                     children=[
-                        drop_down.render(app, expr_df)
+                        drop_down.render(app)
                         ]
                 ),
-                html.Button(
-                    className="dropdown-button",
-                    id = ids.ID_DROPDOWN_BUTTON,
-                    children=["Reset"]
+                html.Div(
+                    className="upload-div",
+                    children=[
+                            html.Button(
+                                className="dropdown-button",
+                                id = ids.ID_DROPDOWN_BUTTON,
+                                children=["Reset"]
+                            ),
+                        ]
                 ),
+                html.Div(
+                    className="upload-div",
+                    children=[
+                        upload.render(app),
+                        ]
+                ),
+                html.Div(
+                    className="upload-div",
+                    children=[
+                        example_button.render(app),
+                        ]
+                )
+                
             ]           
         )
     ]
