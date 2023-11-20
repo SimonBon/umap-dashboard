@@ -10,8 +10,9 @@ import io
 
 def render(app: Dash) -> html.Div:
 
-    return html.Div([
-            className="dropdown-button",
+    return html.Div(
+        className="dropdown-button",
+        children=[
             dcc.Upload(
                 id=ids.ID_UPLOAD,
                 children=html.Div([
